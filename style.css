@@ -1,0 +1,171 @@
+/*
+Theme Name: Tema Base TDC
+Theme URI: http://tallerdecodigo.com
+Author: Pablo Covarrubias
+Author URI: http://tallerdecodigo.com
+Description: Tema de WordPress Personalizado
+Version: 1.0
+*/
+
+@charset 'utf-8';
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+/*HTML5 element display*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+/*Figures*/
+figure {margin: 0;}
+
+/* Utilities */
+.lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+* { box-sizing: border-box; }
+
+/* clearfix for modern browsers */
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+
+/*** FONT FACE ***/
+@font-face {
+    font-family:'Relative';
+    src:url('fonts/Relative.otf');
+    font-weight:300;
+    font-style:normal;
+}
+
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.left{ float: left;}
+.right{ float: right;}
+
+.hidden{display: none!important;}
+
+
+/*** GENERAL ***/
+
+body {font-family:'Relative';min-width:1024px;}
+
+section {text-align:center;}
+
+.wrapper {position:relative;display:inline-block;max-width:1024px;width:100%;text-align:left;}
+
+.main-ad {background:#767676 url('images/dm_head4.png') top center;height:360px;color:#FFF;}
+
+.adver {height:100%;}
+
+.name-ad {position:relative; display:inline-block; background:#FFF; padding:9px 15px; margin:35px 0px 0px 58px;}
+
+.name-ad:before {content:""; height:100%; width:8px; background:#303030; position:absolute; left:-16px; top:0px;}
+
+.social-ad {margin:20px 0px 15px 74px;}
+
+.social-ad img {margin:0px 1px;}
+
+.info-ad {margin-left:74px; font-size:185%;}
+
+.info-ad span {color:#303030;}
+
+.adver {height:100%;}
+
+.video-cont {margin-bottom:-4px;}
+
+.preview {width:100%;height:auto;}
+
+.play {position:absolute; left:50%; top:50%; margin:-64px 0px 0px -64px;}
+
+.about {position:absolute; bottom:20px;left:40px; background:rgba(0,0,0,0.75);color:#FFF;font-size:340%;}
+
+.grid-cont {background:#eeeeee;}
+
+.grid {padding:40px 42px 30px 42px;}
+
+.grid-titulo {background:#303030;color:#FFF;padding:0px 10px; line-height:32px;margin-bottom:10px;}
+
+.grid-titulo span {padding:6px 0px;border-bottom:1px solid #FFF; font-size:125%;}
+
+.nota {position:relative; display:inline-block;height:450px;overflow:hidden; margin:10px 6px;}
+
+.size1 {width:300px;}
+
+.size2 {width:620px;}
+
+.nota img {position:absolute; height:100%; width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
+
+.sobre {position:absolute; bottom:20px;left:20px;color:#FFF;font-size:250%; max-width:90%;}
+
+.sobre span {background:rgba(0,0,0,0.75);padding:2px;}
+
+.anuncio {height:250px;background:#7ed321; width:100%; margin-top:10px;}
+
+.people {padding:25px 42px 30px 42px;}
+
+.wrap-titulo {margin-top:15px;}
+
+.wrap-titulo span {position:relative; background:#303030; color:#FFF;font-size:250%;margin-left:16px; padding:2px 1px;}
+
+.wrap-titulo span:before {content:""; height:100%; width:8px; background:#b0b0b0; position:absolute; left:-16px; top:0px;}
+
+.personaje {position:relative;display:inline-block;height:300px;overflow:hidden;margin:10px 6px;width:300px;text-align:center;}
+
+.per-img {position:relative; display:inline-block; width:128px;height:128px;border-radius:50%;overflow:hidden; margin:25px;}
+
+.per-img img {position:absolute;height:100%;width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
+
+.per-name {position:relative;display:inline-block; color:#3f3f3f; font-size:150%; max-width:55%; height:52px; margin-bottom:10px;}
+
+.per-desc {position:relative;display:inline-block; color:#888888;font-family:'Roboto'; font-size:135%; max-width:90%; height:50px;}
+
+.first{ margin-left:0; padding-left:0;}
+
+.last{ margin-right:0; padding-right:0;}
+
+.map-cont {position:relative;}
+
+#map {width:100%; height:512px;z-index:1000;}
+
+.alt-titulo {position:absolute; left:25px; top:25px; z-index:2000;}
+
+.alt-titulo span {position:relative; background:rgba(0,0,0,0.75); color:#FFF;font-size:250%;margin-left:16px; padding:2px 1px;}
+
+.alt-titulo span:before {content:""; height:100%; width:8px; background:#FFF; position:absolute; left:-16px; top:0px;}
+
+
+
+
+
+
+
+
+
+
+
