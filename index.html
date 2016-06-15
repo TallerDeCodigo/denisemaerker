@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<title>DM</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1, height=device-height">
 		<meta http-equiv="cleartype" content="on">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -32,9 +32,10 @@
 		</section>
 		<section class="video-cont">
 			<div class="wrapper video">
-				<img class="preview" src="images/video.jpg">
-				<img class="play" src="images/play.svg">
-				<div class="about">LA RUTA DE LOS MIGRANTES</div>
+				<iframe  width="560" height="349" src="http://www.youtube.com/embed/U7LXw9tUmS0?showinfo=0&rel=0&hd=1&version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+				<div class="about">
+					<span>LA RUTA DE LOS MIGRANTES</span>
+				</div>
 			</div>
 		</section>
 		<section class="grid-cont">
@@ -42,118 +43,156 @@
 				<div class="grid-titulo">
 					<span>PERIODISMO DE INVESTIGACIÓN</span>
 				</div>
-				<div class="nota size1 first">
-					<img src="images/notas/1.jpg">
-					<div class="sobre">
-						<span>CORRUPCIÓN</span>
+				<div class="paraca">
+					<div class="nota size1 first colu1 primero">
+						<img src="images/notas/1.jpg">
+						<div class="sobre">
+							<span>CORRUPCIÓN</span>
+						</div>
+					</div>
+					<div class="nota size1 colu2">
+						<img src="images/notas/2.jpg">
+						<div class="sobre">
+							<span>DERECHOS HUMANOS</span>
+						</div>
+					</div>
+					<div class="nota size1 last colu1">
+						<img src="images/notas/3.jpg">
+						<div class="sobre">
+							<span>CRIMEN ORGANIZADO</span>
+						</div>
+					</div>
+					<div class="nota size1 first colu2">
+						<img src="images/notas/4.jpg">
+						<div class="sobre">
+							<span>ABUSO DE PODER</span>
+						</div>
+					</div>
+					<div class="nota size2 last">
+						<img src="images/notas/5.jpg">
+						<div class="sobre">
+							<span>MIGRACIÓN</span>
+						</div>
+					</div>
+					<div class="nota noshow">
+						<img src="images/notas/6.jpg">
+						<div class="sobre">
+							<span>SOCIEDAD</span>
+						</div>
+					</div>
+					<div class="nota noshow">
+						<img src="images/notas/7.jpg">
+						<div class="sobre">
+							<span>DESASTRES NATURALES</span>
+						</div>
+					</div>
+					<div class="nota noshow">
+						<img src="images/notas/8.jpg">
+						<div class="sobre">
+							<span>INTERNACIONAL</span>
+						</div>
 					</div>
 				</div>
-				<div class="nota size1">
-					<img src="images/notas/2.jpg">
-					<div class="sobre">
-						<span>DERECHOS HUMANOS</span>
-					</div>
-				</div>
-				<div class="nota size1 last">
-					<img src="images/notas/3.jpg">
-					<div class="sobre">
-						<span>CRIMEN ORGANIZADO</span>
-					</div>
-				</div>
-				<div class="nota size1 first">
-					<img src="images/notas/4.jpg">
-					<div class="sobre">
-						<span>ABUSO DE PODER</span>
-					</div>
-				</div>
-				<div class="nota size2 last">
-					<img src="images/notas/5.jpg">
-					<div class="sobre">
-						<span>MIGRACIÓN</span>
-					</div>
-				</div>
+				<div class="bolas"></div>
 				<div class="anuncio"></div>
 			</div>
 		</section>
 		<section>
 			<div class="wrapper people">
-				<div class="wrap-titulo">
+				<div class="wrap-titulo respond">
 					<span>PERSONAJES</span>
 				</div>
-				<div class="personaje first">
-					<div class="per-img">
-						<img src="images/people/1.jpg">
+				<div class="paraca2">
+					<div class="personaje first colu1">
+						<div class="per-img">
+							<img src="images/people/1.jpg">
+						</div>
+						<div class="per-name">ANDRÉS MANUEL LÓPEZ OBRADOR</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">ANDRÉS MANUEL LÓPEZ OBRADOR</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-				</div>
-				<div class="personaje">
-					<div class="per-img">
-						<img src="images/people/2.jpg">
+					<div class="personaje colu2">
+						<div class="per-img">
+							<img src="images/people/2.jpg">
+						</div>
+						<div class="per-name">CARLOS SALINAS DE GORTARI</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">CARLOS SALINAS DE GORTARI</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-				</div>
-				<div class="personaje last">
-					<div class="per-img">
-						<img src="images/people/3.jpg">
+					<div class="personaje last colu1">
+						<div class="per-img">
+							<img src="images/people/3.jpg">
+						</div>
+						<div class="per-name">EVO MORALES</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">EVO MORALES</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-				</div>
-				<div class="personaje first">
-					<div class="per-img">
-						<img src="images/people/4.jpg">
+					<div class="personaje first colu2">
+						<div class="per-img">
+							<img src="images/people/4.jpg">
+						</div>
+						<div class="per-name">FELIPE CALDERÓN HINOJOSA</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">FELIPE CALDERÓN HINOJOSA</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-				</div>
-				<div class="personaje">
-					<div class="per-img">
-						<img src="images/people/5.jpg">
+					<div class="personaje oc-res1">
+						<div class="per-img">
+							<img src="images/people/5.jpg">
+						</div>
+						<div class="per-name">HILLARY CLINTON</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">HILLARY CLINTON</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-				</div>
-				<div class="personaje last">
-					<div class="per-img">
-						<img src="images/people/6.jpg">
+					<div class="personaje last oc-res1">
+						<div class="per-img">
+							<img src="images/people/6.jpg">
+						</div>
+						<div class="per-name">ENRIQUE PEÑA NIETO</div>
+						<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div>
-					<div class="per-name">ENRIQUE PEÑA NIETO</div>
-					<div class="per-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 				</div>
+				<div class="bolas2"></div>
 			</div>
 		</section>
-		<section class="map-cont">
+		<section class="map-cont oc-res2">
 				<div id="map"></div>
-				<div class="alt-titulo">
-					<span>ZONAS DE INVESTIGACIÓN</span>
+				<div class="wrapper mapa">
+					<div class="alt-titulo">
+						<span>ZONAS DE INVESTIGACIÓN</span>
+					</div>
 				</div>
 				<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDQ3zqRkIHDwpNjliZ1ir7nJ7CNz6ikMtI&v=3.exp"></script>
     			<script type="text/javascript" src="js/map.js"></script>
 		</section>
-		<section class="grid-cont">
+		<section class="grid-cont bottom">
 			<div class="wrapper grid">
-				<div class="nota size1 first">
-					<img src="images/notas/1.jpg">
+				<div class="nota size1 first colu1 oc-res2">
+					<img src="images/notas/6.jpg">
 					<div class="sobre">
-						<span>CORRUPCIÓN</span>
+						<span>SOCIEDAD</span>
 					</div>
 				</div>
-				<div class="nota size1">
-					<img src="images/notas/2.jpg">
+				<div class="nota size1 colu2 oc-res2">
+					<img src="images/notas/7.jpg">
 					<div class="sobre">
-						<span>DERECHOS HUMANOS</span>
+						<span>DESASTRES NATURALES</span>
 					</div>
 				</div>
-				<div class="nota size1 last">
-					<img src="images/notas/3.jpg">
+				<div class="nota size1 last oc-res1 oc-res2">
+					<img src="images/notas/8.jpg">
 					<div class="sobre">
-						<span>CRIMEN ORGANIZADO</span>
+						<span>INTERNACIONAL</span>
 					</div>
 				</div>
 				<div class="wrap-titulo">
 					<span>RELEVANTES</span>
+				</div>
+				<div class="rel-vid first colu1">
+					<iframe src="http://www.youtube.com/embed/3azH5VSAhbE?showinfo=0&rel=0&version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+					<div>LOREM IPSUM DOLOR SIT AMET CONSECTETUR</div>
+				</div>
+				<div class="rel-vid colu2">
+					<iframe src="http://www.youtube.com/embed/IWANPUL7kGE?showinfo=0&rel=0&version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+					<div>LOREM IPSUM DOLOR SIT AMET CONSECTETUR</div>
+				</div>
+				<div class="rel-vid last oc-res1">
+					<iframe src="http://www.youtube.com/embed/jSxDt9ol80A?showinfo=0&rel=0&version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+					<div>LOREM IPSUM DOLOR SIT AMET CONSECTETUR</div>
 				</div>
 			</div>
 		</section>
