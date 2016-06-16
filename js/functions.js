@@ -217,7 +217,7 @@ $(window).on("load",function(){
 
 })(jQuery);
 
-
+/*
 $(document).ready(function() {
     $(window).resize(function() {
         google.maps.event.trigger(map, 'resize');
@@ -226,3 +226,4 @@ $(document).ready(function() {
         google.maps.event.trigger(map, 'resize');
     }, 1500);
 });
+*/
