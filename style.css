@@ -111,11 +111,11 @@ ul {margin:0!important;}
 
 .grid-cont {background:#eeeeee;}
 
-.grid {padding:40px 2.5% 30px 2.5%;}
+.grid {padding:25px 2.5% 30px 2.5%;}
 
 .nota {position:relative; display:inline-block;height:450px;overflow:hidden;text-align:left;}
 
-.nota img {position:absolute; height:100%; width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
+.nota img {position:absolute; height:110%; width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
 
 .sobre {position:absolute; bottom:20px;left:20px;color:#FFF;font-size:250%; max-width:90%;}
 
@@ -167,6 +167,64 @@ ul {margin:0!important;}
 
 .activa {background:#303030;}
 
+/* SINGLE */
+
+.titulado {background:#eeeeee;}
+
+.titulado .wrapper {text-align:left; padding:16px 0px;}
+
+.name-tit {position:relative;display:inline-block; background:#FFF; padding:0px 3px; height:32px; margin-left:35px;}
+
+.name-tit img {height:32px;width:auto;}
+
+.name-tit:before {content:""; height:100%; width:8px; background:#303030; position:absolute; left:-16px; top:0px;}
+
+.info-tit {position:relative; display:inline-block; margin-left:13px;font-size:155%; margin-top:20px;color:#bebebe;top:-8px;}
+
+.info-tit span {color:#303030; margin:0px 13px;}
+
+.social-tit {float:right; margin:10px 36px;}
+
+.single {background:#eeeeee;}
+
+.content {text-align:left;}
+
+.leftpart {float:left; margin-bottom:-4px;}
+
+.sidebar {position:relative; background:#b0b0b0; float:right; width:33.33%; color:#808080; font-size:130%;margin-bottom:-4px;}
+
+.sidebar:before {content:""; background:#b0b0b0; height:100%; width:500%; position:absolute; left:99.9%; top:0px;}
+
+.encab {color:#FFF; padding-bottom:12px; border-bottom:2px solid #FFF;font-size:80%;}
+
+.item-side {padding-left:32px;position:relative;margin:20px 0px;}
+
+.item-side:before {width:28px;height:28px;position:absolute;left:-2px; top:1px;}
+
+.ivd:before {content:url(images/video.svg);}
+
+.ino:before {content:url(images/nota.svg);}
+
+.ad-side {width:100%; height:250px; background:#7ed321;margin:40px 0px;}
+
+h2 {font-weight:normal; margin:20px 0px 0px;}
+
+h3 {font-family:'Roboto Condensed', sans-serif;font-weight:400;margin:15px 0px;}
+
+h4 {font-size:150%;font-weight:normal;margin-bottom:9px;}
+
+p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;color:#808080; margin-bottom:25px;line-height:140%;}
+
+.separ {border-top:1px solid #979797;padding-top:20px;}
+
+.social-color {margin:23px 0px 20px;}
+
+.more-vid {position:relative;display:inline-block;margin:5px 0.6% 15px 0.6%;text-align:left; background:#303030; overflow:hidden;}
+
+.more-vid iframe {width:100%; height:auto;}
+
+.more-vid div {color:#FFF; margin-top:-4px; padding:3px 7px; font-size:110%; width:100%;}
+
 @media (min-width:620px) {
 
 	.main-ad {background-position: 58% 50%;}
@@ -185,6 +243,14 @@ ul {margin:0!important;}
 
 	.noshow {display:none;}
 
+	.leftpart {width:66.66%;}
+
+	.titulado {height:85px;}
+
+	h2 {font-size:230%;}
+
+	h3 {font-size:135%;}
+
 }
 
 @media (max-width:919px) and (min-width:620px) {
@@ -198,6 +264,8 @@ ul {margin:0!important;}
 	.personaje {width:48.75%;}
 
 	.rel-vid {width:48.75%;}
+
+	.more-vid {width:48.6%;}
 
 	.colu1 {margin-left:0; padding-left:0;}
 
@@ -219,6 +287,8 @@ ul {margin:0!important;}
 
 	.rel-vid {width:32%;}
 
+	.more-vid {width:31.75%;}
+
 	.first {margin-left:0; padding-left:0;}
 
 	.last {margin-right:0; padding-right:0;}
@@ -227,15 +297,23 @@ ul {margin:0!important;}
 
 }
 
-@media (max-width:1023px) {
+@media (max-width:1024px) {
 
 	.video {height:0;padding-bottom:54%;}
 
+	.leftpart {padding:0px 30px 0px 20px;}
+
+	.sidebar {padding:20px 20px 20px 20px;}
+
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
 
 	.video {width:952px; margin:35px 0px; height:520px;}
+
+	.leftpart {padding:0px 30px;}
+
+	.sidebar {padding:20px 30px 20px 20px;}
 
 }
 
@@ -273,7 +351,19 @@ ul {margin:0!important;}
 
 	.about {font-size:225%;}
 
+	.leftpart {width:100%;}
+
+	.more-vid {width:100%;}
+
+	.titulado {height:68px;}
+
+	h2 {font-size:210%;}
+
+	h3 {font-size:115%;}
+
 }
+
+
 
 
 

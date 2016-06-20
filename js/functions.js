@@ -2,6 +2,17 @@
 
 $(window).on("load resize",function(){
 	var ancho = document.documentElement.clientWidth;
+	$(".content").css("height", "auto");
+	$(".sidebar").css("height", "auto");
+	var content = $('.leftpart').height();
+	var sidebar = $('.sidebar').height();
+	if (ancho > 619) {
+		if (content > sidebar) {
+			$(".sidebar").css("height", content+"px");
+		} else {
+			$(".leftpart").css("height", sidebar+"px");
+		}
+	}
 	if (ancho < 620) {
 		// SLIDER 1
 		$(".paraca").addClass("contenedor");
