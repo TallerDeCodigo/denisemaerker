@@ -253,7 +253,7 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 
 .mosaic div img {position:absolute;height:100%;width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
 
-.wrapper-med iframe {width:100%!important; position:relative!important; display:inline-block!important; margin:30px 0px 20px!important; max-width:690px!important;}
+.wrapper-med iframe {width:100%!important; position:relative!important; display:inline-block!important; max-width:690px!important;}
 
 @media (min-width:620px) {
 
@@ -282,6 +282,8 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 	h2 {font-size:230%;}
 
 	h3 {font-size:135%;}
+
+	.wrapper-med iframe {margin:30px 0px 20px!important;}
 
 }
 
@@ -394,6 +396,10 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 	h2 {font-size:210%;}
 
 	h3 {font-size:115%;}
+
+	.wrapper-med {padding:0px 20px;}
+
+	.wrapper-med iframe {margin:10px 0px 5px!important;}
 
 }
 
