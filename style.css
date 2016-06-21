@@ -225,6 +225,36 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 
 .more-vid div {color:#FFF; margin-top:-4px; padding:3px 7px; font-size:110%; width:100%;}
 
+/* MEDIUM */
+
+.wrapper-med {position:relative;display:inline-block;width:100%;max-width:690px; text-align:left;}
+
+.element-med {position:relative;display:inline-block;width:100%;text-align:center;}
+
+.fullsize {width:100%; height:auto;}
+
+.size92 {width:92%; height:auto;position:relative;display:inline-block;}
+
+.size82 {width:85%;height:auto;max-width:812px;position:relative;display:inline-block;}
+
+.pie82 {width:85%;height:auto;max-width:812px;position:relative;display:inline-block;background:#303030;text-align:left;color:#FFF;margin-top:-5px;padding:3px 7px;font-size:115%;}
+
+.medium p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:140%;color:#808080;line-height:190%; margin:30px 0px;}
+
+.medium h2 {margin:30px 0px 10px;}
+
+.medium h3 {margin:30px 0px;}
+
+.adv-med {position:relative;display:inline-block;width:90%;max-width:1060px;height:110px;background:#7ed321;margin:10px 0px;}
+
+.mosaic {width:95%;margin:20px 0px; position:relative;display:inline-block;}
+
+.mosaic div {width:47.5%; height:0; padding-bottom:40%; overflow:hidden;position:relative;display:inline-block; margin:0.8%;}
+
+.mosaic div img {position:absolute;height:100%;width:auto; top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;}
+
+.wrapper-med iframe {width:100%!important; position:relative!important; display:inline-block!important; margin:30px 0px 20px!important; max-width:690px!important;}
+
 @media (min-width:620px) {
 
 	.main-ad {background-position: 58% 50%;}
@@ -246,6 +276,8 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 	.leftpart {width:66.66%;}
 
 	.titulado {height:85px;}
+
+	h1 {font-size:280%;}
 
 	h2 {font-size:230%;}
 
@@ -356,6 +388,8 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 	.more-vid {width:100%;}
 
 	.titulado {height:68px;}
+
+	h1 {font-size:250%;}
 
 	h2 {font-size:210%;}
 
