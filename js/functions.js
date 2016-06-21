@@ -223,6 +223,7 @@ $(window).on("load",function(){
 			return result;
 		}
 
+	$(".medium").fitVids();
 
 	});
 
