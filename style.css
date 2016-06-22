@@ -239,7 +239,13 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 
 .pie82 {width:85%;height:auto;max-width:812px;position:relative;display:inline-block;background:#303030;text-align:left;color:#FFF;margin-top:-5px;padding:3px 7px;font-size:115%;}
 
-.medium p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:145%;color:#808080;line-height:190%; margin:30px 0px; text-align:left;}
+.medium p {font-family:'Roboto', sans-serif;font-weight:300;font-size:135%;color:#808080;line-height:190%; margin:30px 0px; text-align:left;}
+
+.medium p strong {font-weight:500;}
+
+.medium p a.linked {text-decoration:none; color:inherit;border-bottom:1px dotted #808080;}
+
+.medium p a.linked:hover {color:#303030;border-bottom:1px dotted #303030;}
 
 .medium h1 {padding:0px 20px;}
 
@@ -301,7 +307,7 @@ p {font-family:'Roboto Condensed', sans-serif;font-weight:300;font-size:120%;col
 
 	.wrapper-med iframe.instagram-media {margin:10px 0px!important;}
 
-	.fluid-width-video-wrapper {margin:0px 0px 30px;}
+	.wrapper-med .fluid-width-video-wrapper {margin:0px 0px 30px;}
 
 	.wrapper-med iframe.twitter-tweet {margin:0px 0px -2px!important;}
 
