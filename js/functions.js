@@ -223,7 +223,14 @@ $(window).on("load",function(){
 			return result;
 		}
 
-	$(".medium").fitVids();
+		$(".medium").fitVids();
+
+
+		/*** longread migrantes ***/
+
+		var altura = $(window).height();
+		$('.intro').height(altura / 2);
+		$('.descanso').height(altura / 2);
 
 	});
 
