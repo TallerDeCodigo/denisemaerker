@@ -234,6 +234,9 @@ $(window).on("load",function(){
 		$('.intro').height(altura / 2);
 		$('.descanso').height(altura / 2);
 
+		var alturagif = $(".segundodescanso").children().height();
+		$('.segundodescanso').height(alturagif);
+
 	});
 
 })(jQuery);

@@ -91,21 +91,31 @@ strong {font-weight: bold;}
 .parrafo a {color: #606060;}
 .centro {width: 50%; margin: 0 auto 60px auto; max-width: 720px;}
 hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
-.primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+.primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;}
 .primerdescanso .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff;}
 .primerdescanso .half h2 {text-align: center; font-weight: 4rem;}
-.primerdescanso .half p {float: right; width: 45%; padding: 60px 32px; margin-top: 50px; margin-right: 10px; background: url('images/migrantes/bg-descanso.png') repeat;}
+.primerdescanso .half p {float: right; width: 55%; padding: 60px 32px; margin-top: 130px;  background: url('images/migrantes/bg-descanso.png') repeat;}
 .primerdescanso .half p a {color: #f0f0f0;}
 .cienporciento {width: 100%; ; background: #000; margin-bottom: 60px; }
+.cienporciento .video {float: right; margin-top: 50px;}
 .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff; }
 .half h2 {text-align: center; font-size: 4rem; font-family: Roboto Condensed; text-transform: uppercase: ;}
 .half .texto {float: left; width: 45%; padding: 32px; margin-top: 60px;}
 .half p a{color: #f0f0f0;}
-.half img {float: right; width: 55%; height: auto;}
-.half video {float: right; width: 55%; height: auto;}
+.half img {float: right; width: 50%; height: auto; padding-right: 32px;}
+.half video {float: right; width: 50%; height: auto;}
+
+.half-blanco {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff; }
+.half-blanco h2 {text-align: center; font-size: 4rem; font-family: Roboto Condensed; text-transform: uppercase: ;}
+.half-blanco .texto {float: left; width: 45%; padding: 32px; margin-top: 60px; color: #171717;}
+.half-blanco p a{color: #606060;}
+.half-blanco img {float: right; width: 50%; height: auto; padding-right: 32px;}
+.half-blanco video {float: right; width: 50%; height: auto;}
 
 
 .segundodescanso {background-image: url('images/migrantes/MIGRANTES-21.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;}
+.segundodescanso img {width: 100%; height: auto; }
 
-
+.video {width: 50%; margin: 0 auto; margin-bottom: 60px;}
+.video iframe {width: 100%; margin: 0 auto;}
 
