@@ -84,18 +84,21 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 body {background: #fbfbfb; color: #171717;}
 strong {font-weight: bold;}
 .video {margin-bottom: 60px;}
-.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;}
+
+.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;  background-position: center;}
 .intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 5rem; width: 70%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
 .intro hr {}
 .parrafo {font-family: Lora; font-size: 20px; line-height: 30px; }
 .parrafo a {color: #606060;}
 .centro {width: 50%; margin: 0 auto 60px auto; max-width: 720px;}
 hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
-.primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;}
+
+.primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;  background-position: center;}
 .primerdescanso .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff;}
 .primerdescanso .half h2 {text-align: center; font-weight: 4rem;}
 .primerdescanso .half p {float: right; width: 55%; padding: 60px 32px; margin-top: 130px;  background: url('images/migrantes/bg-descanso.png') repeat;}
 .primerdescanso .half p a {color: #f0f0f0;}
+
 .cienporciento {width: 100%; ; background: #000; margin-bottom: 60px; }
 .cienporciento .video {float: right; margin-top: 50px;}
 .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff; }
@@ -113,9 +116,42 @@ hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
 .half-blanco video {float: right; width: 50%; height: auto;}
 
 
-.segundodescanso {background-image: url('images/migrantes/MIGRANTES-21.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;}
+.segundodescanso {background-image: url('images/migrantes/MIGRANTES-21.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px; background-position: center; }
+.tercerdescanso {background-image: url('images/migrantes/MIGRANTES-50.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}
 .segundodescanso img {width: 100%; height: auto; }
 
 .video {width: 50%; margin: 0 auto; margin-bottom: 60px;}
 .video iframe {width: 100%; margin: 0 auto;}
 
+
+.grid {width: 70%; margin: 0 auto 60px auto;}
+.grid img {width: 49%; margin-right: 2%; float: left; margin-bottom: 2%;}
+.grid img:nth-of-type(2n) {margin-right: 0px;}
+
+@media (max-width:720px) {
+	.titulado {display: none;}
+
+	.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}
+	.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 3rem; width: 100%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
+	
+	.centro {width: 100%; margin: 0 auto 60px auto; max-width: 720px; padding: 0 10%;}
+	.video {width: 100%;}
+	
+	.primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: scroll; margin-bottom: 60px;  background-position: left;}
+	.primerdescanso .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff;}
+	.primerdescanso .half h2 {text-align: center; font-weight: 4rem;}
+	.primerdescanso .half p {float: right; width: 90%; margin: 10% 5%; padding: 10px; background: url('images/migrantes/bg-descanso.png') repeat;}
+	.primerdescanso .half p a {color: #f0f0f0;}
+
+	.cienporciento {width: 100%; ; background: #000; margin-bottom: 60px; }
+	.cienporciento .video {float: right; margin-top: 50px;}
+	.half {width: 100%; max-width: 1280px; margin: 0 auto;  color: #fff; }
+	.half h2 {text-align: center; font-size: 4rem; font-family: Roboto Condensed; text-transform: uppercase: ;}
+	.half .texto { width: 100%; padding: 32px; margin-top: 0px;}
+	.half p a{color: #f0f0f0;}
+	.half img {width: 100%; height: auto; padding-right: 0px; }
+	.half video {float: right; width: 50%; height: auto;}
+	
+	.grid {width: 100%; margin: 0 auto 60px auto;}
+
+}

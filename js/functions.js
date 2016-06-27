@@ -230,10 +230,13 @@ $(window).on("load",function(){
 
 		/*** longread migrantes ***/
 
+		var ancho = $(window).width();
 		var altura = $(window).height();
 		$('.intro').height(altura / 2);
-		$('.descanso').height(altura / 2);
 
+	if(ancho > 720){
+		$('.descanso').height(altura / 2);
+	}
 		var alturagif = $(".segundodescanso").children().height();
 		$('.segundodescanso').height(alturagif);
 
