@@ -83,8 +83,9 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 body {background: #fbfbfb; color: #171717;}
 strong {font-weight: bold;}
+.video {margin-bottom: 60px;}
 .intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;}
-.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 5rem; width: 70%; right: 10px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; }
+.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 5rem; width: 70%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
 .intro hr {}
 .parrafo {font-family: Lora; font-size: 20px; line-height: 30px; }
 .parrafo a {color: #606060;}
@@ -101,6 +102,7 @@ hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
 .half .texto {float: left; width: 45%; padding: 32px; margin-top: 60px;}
 .half p a{color: #f0f0f0;}
 .half img {float: right; width: 55%; height: auto;}
+.half video {float: right; width: 55%; height: auto;}
 
 
 .segundodescanso {background-image: url('images/migrantes/MIGRANTES-21.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;}

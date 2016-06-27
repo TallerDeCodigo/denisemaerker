@@ -224,6 +224,8 @@ $(window).on("load",function(){
 		}
 
 		$(".medium").fitVids();
+		$(".longread").fitVids();
+
 
 
 		/*** longread migrantes ***/
