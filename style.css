@@ -143,7 +143,7 @@ ul {margin:0!important;}
 
 .map-cont {position:relative;}
 
-#map, .map-em {width:100%; height:512px;z-index:1000;}
+#map, .map-em {width:80%; height:512px;z-index:1000; margin: 0 auto;}
 
 .mapa {top:-475px; z-index:2000;text-align:left;}
 

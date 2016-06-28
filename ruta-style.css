@@ -132,7 +132,7 @@ hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
 	.titulado {display: none;}
 
 	.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}
-	.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 3rem; width: 100%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
+	.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 2rem; width: 100%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
 	
 	.centro {width: 100%; margin: 0 auto 60px auto; max-width: 720px; padding: 0 10%;}
 	.video {width: 100%;}
