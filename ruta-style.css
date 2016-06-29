@@ -72,6 +72,7 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 .titulado {background:#eeeeee;}
 .titulado .wrapper {text-align:left; padding:16px 0px;  max-width: 1024px; margin: 0 auto;}
+.wrapper{display:none;}
 .name-tit {position:relative;display:inline-block; background:#FFF; padding:0px 3px; height:32px; margin-left:35px;}
 .name-tit img {height:32px;width:auto;}
 .name-tit:before {content:""; height:100%; width:8px; background:#303030; position:absolute; left:-16px; top:0px;}
@@ -81,30 +82,45 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 /*** GENERAL ***/
 
-body {background: #fbfbfb; color: #171717;}
+body {background: #000; color: #fff;}
 strong {font-weight: bold;}
 .video {margin-bottom: 60px;}
+.video_main{width: 100%;height:auto;}
 
-.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;  background-position: center;}
-.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 5rem; width: 70%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
+
+
+/*MAPA_MIGRACION*/
+#map {height: 100%;}
+.scroll{height:3000px;width:40%;z-index:9999;background:rgba(66,66,66,0.1);}
+.scroll p img{border:1px solid transparent;}
+.scroll p{padding:30px;}
+.mapa{position:absolute;top:80%;width:80%;left:30%;z-index:9999;}
+.mapa svg{width:100%;height:auto;}
+.fixed_map{position:fixed!important;}
+
+
+
+.intro {width: 100%; overflow:hidden;z-index:10000;position: relative; margin-bottom: 60px; /*background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;  background-position: center;*/}
+.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 5rem; width: 70%; right: 0px; bottom: 30%; font-family: Roboto Condensed; line-height: 2rem; display: block; text-align: center; padding: 30px; right: 15% }
 .intro hr {}
+.intro img{position:absolute;top:5%;left:45%;}
 .parrafo {font-family: Lora; font-size: 20px; line-height: 30px; }
 .parrafo a {color: #606060;}
-.centro {width: 50%; margin: 0 auto 60px auto; max-width: 720px;}
+.centro {width: 50%; margin: 0 auto 60px 0px; max-width: 720px;padding-left:50px;}
 hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
 
 .primerdescanso {background-image: url('images/migrantes/MIGRANTES-16.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-bottom: 60px;  background-position: center;}
 .primerdescanso .half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff;}
 .primerdescanso .half h2 {text-align: center; font-weight: 4rem;}
-.primerdescanso .half p {float: right; width: 55%; padding: 60px 32px; margin-top: 130px;  background: url('images/migrantes/bg-descanso.png') repeat;}
+.primerdescanso .half p {float: left; width: 55%; padding: 60px 32px; margin-top: 50px;  background: url('images/migrantes/bg-descanso.png') repeat;}
 .primerdescanso .half p a {color: #f0f0f0;}
 
-.cienporciento {width: 100%; ; background: #000; margin-bottom: 60px; }
-.cienporciento .video {float: right; margin-top: 50px;}
-.half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #fff; }
+.cienporciento {width: 100%; ; background: #fff; margin-bottom: 60px; }
+.cienporciento .video {float: left; margin-top: 50px;}
+.half {width: 100%; max-width: 1280px; margin: 0 auto; margin-bottom: 60px; color: #000; }
 .half h2 {text-align: center; font-size: 4rem; font-family: Roboto Condensed; text-transform: uppercase: ;}
-.half .texto {float: left; width: 45%; padding: 32px; margin-top: 60px;}
-.half p a{color: #f0f0f0;}
+.half .texto {float: right; width: 45%; padding: 32px; margin-top: 60px;}
+.half p a{color: #606060;}
 .half img {float: right; width: 50%; height: auto; padding-right: 32px;}
 .half video {float: right; width: 50%; height: auto;}
 
@@ -120,19 +136,23 @@ hr.break {color: #606060; width: 50%; margin: 0 auto; max-width: 360px;}
 .tercerdescanso {background-image: url('images/migrantes/MIGRANTES-50.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}
 .segundodescanso img {width: 100%; height: auto; }
 
-.video {width: 50%; margin: 0 auto; margin-bottom: 60px;}
+.video {width: 50%; margin: 0 auto 0 0; margin-bottom: 60px;}
 .video iframe {width: 100%; margin: 0 auto;}
 
 
 .grid {width: 70%; margin: 0 auto 60px auto;}
 .grid img {width: 49%; margin-right: 2%; float: left; margin-bottom: 2%;}
 .grid img:nth-of-type(2n) {margin-right: 0px;}
+@media(max-width: 1024px){
+	.intro h1 {position: absolute;  font-size: 4rem;top:20%;}
 
+}
 @media (max-width:720px) {
 	.titulado {display: none;}
-
-	.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}
-	.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 2rem; width: 100%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; background: url('images/migrantes/bg-descanso.png') repeat; padding: 30px; }
+	.intro img{position:absolute;top:5%;left:35%; width: 30%}
+	.mapa{position:absolute;top:80%;width:80%;left:0%;z-index:9999;display:none;}
+	/*.intro {width: 100%; position: relative; margin-bottom: 60px; background-image: url('images/migrantes/MIGRANTES-14.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  background-position: center;}*/
+	.intro h1 {text-transform: uppercase; position: absolute; color: #fff; vertical-align: bottom; font-weight: normal; font-size: 3rem; width: 100%; right: 0px; bottom: 0px; font-family: Roboto Condensed; line-height: 2rem; display: block; padding: 30px; }
 	
 	.centro {width: 100%; margin: 0 auto 60px auto; max-width: 720px; padding: 0 10%;}
 	.video {width: 100%;}
