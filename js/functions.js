@@ -232,7 +232,7 @@ $(window).on("load",function(){
 
 		var ancho = $(window).width();
 		var altura = $(window).height();
-		$('.intro').height(altura / 2);
+		$('.intro').height(altura);
 
 	if(ancho > 720){
 		$('.descanso').height(altura / 2);
