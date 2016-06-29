@@ -232,15 +232,83 @@ $(window).on("load",function(){
 
 		var ancho = $(window).width();
 		var altura = $(window).height();
-		$('.intro').height(altura);
+
 
 	if(ancho > 720){
 		$('.descanso').height(altura / 2);
+		$('.intro').height(altura / 1.33);
 	}
 		var alturagif = $(".segundodescanso").children().height();
 		$('.segundodescanso').height(alturagif);
 
+
 	});
+
+	/***MAPA_MIGRACION***/
+	var path = document.querySelector(".ruta");//obtener elemento
+	var div = document.querySelector(".mapa");
+	var pathLength = path.getTotalLength();//total de puntos del path svg
+
+	path.style.strokeDasharray = pathLength + ' ' + pathLength;//asigna total de puntos al largo del dash
+	path.style.strokeDashoffset = pathLength;//Offset en los dashes para hacerlos parecer ocultos
+
+	// div.style.transform="scale(1)";
+	
+	// SCROLL	
+	window.addEventListener("scroll", function(e) {
+		var ancho = $(window).width();
+		if(ancho>=1024){
+
+	  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight); //porcentaje que ha recorrido el scroll
+	  var drawLength = pathLength * scrollPercentage/6; //longitud para compensar los dashes y hacerlos visibles
+	  var progresivo = scrollPercentage*11;
+
+	  if(document.documentElement.clientWidth>500){
+		  if(scrollPercentage>=0.07) {
+		  	div.style.position="fixed";
+		  	div.style.top="9%";
+		  }else{
+		  	div.style.position="absolute";
+		  	div.style.top="80%";
+		  }
+	  }else{
+	  	div.style.position="fixed";
+	  	div.style.top="20%";
+	  }
+
+	  path.style.strokeDashoffset = (pathLength) - (drawLength); //desdibujar
+
+
+	  // Cuando el scroll se completa se elimina el array de dashes para terminar la figura o se agrega si no
+
+	  if(progresivo>=1){
+		if(progresivo<3)
+			div.style.transform="scale("+progresivo+")";
+			div.style.transform="translate("+progresivo+")";
+	  }
+		
+			progresivo = progresivo/4;
+
+		if(progresivo>=1){
+			// console.log("es uno " + progresivo);
+			// console.log(progresivo);
+			div.style.transform="translate("+progresivo*137+"px, "+progresivo*110+"px)"+"scale(2.5)";
+		}
+
+
+	  if (scrollPercentage >= 0.99) {
+	    path.style.strokeDasharray = "none";
+	  } else {
+	    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+	  }
+		}else{
+			div.style.position="fixed";
+			path.style.strokeDashoffset = pathLength;
+		}
+
+
+
+	});//END SCROLL LISTENER
 
 })(jQuery);
 
